@@ -1,0 +1,70 @@
+%btn-base {
+  height: 2.6rem;
+  width: 22rem;
+  padding: 0rem;
+  border: none;
+  border-radius: 0.25rem;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6345rem;
+
+  background-color: var(--color-primary);
+  color: var(--grey-0);
+
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: var(--font-primary);
+
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--color-primary-50);
+  }
+
+  &.negative {
+    background-color: var(--color-primary-disable);
+  }
+
+  &.return {
+    background-color: var(--grey-3);
+    height: 3rem;
+
+    &:hover {
+      background-color: var(--grey-2);
+    }
+  }
+
+  &.disable {
+    background-color: var(--grey-1);
+
+    &:hover {
+      background-color: var(--grey-2);
+    }
+  }
+}
+
+.btn {
+  @extend %btn-base;
+}
+
+.btn__medium {
+  @extend %btn-base;
+  height: 2.5rem;
+}
+
+.btn__small {
+  @extend %btn-base;
+  height: 1.5rem;
+  width: 5rem;
+}
+
+@media (max-width: 320px) {
+  .btn {
+    width: 17rem;
+  }
+  .btn__small {
+    height: 0.7rem;
+  }
+}

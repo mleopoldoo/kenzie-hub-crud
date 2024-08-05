@@ -1,0 +1,21 @@
+.container__header {
+  margin: 0 auto;
+  width: 20.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+
+  img {
+    width: 8rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .container__header {
+    width: 16rem;
+    img {
+      width: 6rem;
+    }
+  }
+}
