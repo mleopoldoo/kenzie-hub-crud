@@ -1,0 +1,19 @@
+.nav__header {
+  border-bottom: 1px solid var(--grey-3);
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 11rem;
+
+  img {
+    width: 6.5625rem;
+  }
+}
+@media (max-width: 320px) {
+  .nav__header {
+    gap: 3rem;
+  }
+}

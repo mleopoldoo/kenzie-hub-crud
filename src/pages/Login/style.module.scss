@@ -1,0 +1,26 @@
+body {
+  margin: 1rem;
+
+  header {
+    text-align: center;
+    padding: 2rem;
+
+    .logo {
+      width: 9rem;
+    }
+  }
+
+  main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 320px) {
+  header {
+    .logo {
+      width: 6rem;
+    }
+  }
+}
